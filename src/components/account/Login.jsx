@@ -157,8 +157,8 @@ const Login = ({ isUserAuthenticated }) => {
                 {
                     account === 'login' ?
                         <Wrapper>
-                            <TextField variant="standard" value={login.username} onChange={(e) => onValueChange(e)} name='username' label='Enter Username' />
-                            <TextField type='password' variant="standard" value={login.password} onChange={(e) => onValueChange(e)} name='password' label='Enter Password' />
+                            <TextField autoComplete="off" variant="standard" value={login.username} onChange={(e) => onValueChange(e)} name='username' label='Enter Username' />
+                            <TextField autoComplete="off" type='password' variant="standard" value={login.password} onChange={(e) => onValueChange(e)} name='password' label='Enter Password' />
 
                             {error && <Error>{error}</Error>}
 
@@ -167,9 +167,9 @@ const Login = ({ isUserAuthenticated }) => {
                             <SignupButton onClick={() => toggleSignup()} style={{ marginBottom: 50 }}>Create an account</SignupButton>
                         </Wrapper> :
                         <Wrapper>
-                            <TextField value={signup.name} variant="standard" onChange={(e) => onInputChange(e)} name='name' label='Enter Name' />
-                            <TextField value={signup.username} variant="standard" onChange={(e) => onInputChange(e)} name='username' label='Enter Username' />
-                            <TextField value={signup.password} type='password' variant="standard" onChange={(e) => onInputChange(e)} name='password' label='Enter Password' />
+                            <TextField autoComplete="off" value={signup.name} variant="standard" onChange={(e) => onInputChange(e)} name='name' label='Enter Name' />
+                            <TextField autoComplete="off" value={signup.username} variant="standard" onChange={(e) => onInputChange(e)} name='username' label='Enter Username' />
+                            <TextField autoComplete="off" value={signup.password} type='password' variant="standard" onChange={(e) => onInputChange(e)} name='password' label='Enter Password' />
                             {error && <Error>{error}</Error>}
 
                             <SignupButton onClick={() => signupUser()} >Signup</SignupButton>
