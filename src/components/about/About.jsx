@@ -35,7 +35,7 @@ const About = () => {
                     </Box>
                 </Text>
                 <Text variant="h5">
-                    to reach me-:
+                    to reach me---------:
                     <Box component="span" style={{ marginLeft: 5, display:'flex' }}>
                         <Link sx={{mx:2}} href="https://www.instagram.com/" color="inherit" target="_blank">
                             <Instagram />
