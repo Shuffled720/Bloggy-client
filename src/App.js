@@ -2,7 +2,6 @@ import { useState } from 'react';
 
 import { Box } from '@mui/material';
 import { BrowserRouter, Routes, Route, Navigate, Outlet } from 'react-router-dom';
-import { createTheme } from '@mui/material/styles';
 
 
 
@@ -22,19 +21,7 @@ import Login from './components/account/Login';
 
 
 
-//styles
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: '#FF000',
-      
-    },
-    secondary: {
-      main: '#0044ff',
-    },
-    
-  },
-});
+
   
 
 const PrivateRoute = ({ isAuthenticated, ...props }) => {
